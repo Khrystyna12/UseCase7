@@ -1,3 +1,5 @@
+package player;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -6,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class PlayerAnalyzerTest {
+class PlayerAnalyzerTest {
 
     private final PlayerAnalyzer playerAnalyzer = new PlayerAnalyzer();
 
@@ -62,7 +64,8 @@ public class PlayerAnalyzerTest {
     void NullSkillsTest() {
         Player player = new Player();
         player.setSkills(null);
-        assertThrows(RuntimeException.class, () -> playerAnalyzer.calculateScore(List.of(player)));
+        List<Player> players = List.of(player);
+        assertThrows(RuntimeException.class, () -> playerAnalyzer.calculateScore(players));
     }
 
     @Test

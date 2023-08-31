@@ -1,3 +1,5 @@
+package student;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -10,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class StudentConverterTest {
+class StudentConverterTest {
 
     private final StudentConverter studentConverter = new StudentConverter();
 
