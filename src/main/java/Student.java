@@ -1,11 +1,11 @@
 public class Student {
 
-    public String name;
-    public int age;
-    public int grade;
-    public boolean exceptional;
-    public boolean honorRoll;
-    public boolean passed;
+    private String name;
+    private int age;
+    private int grade;
+    private boolean exceptional;
+    private boolean honorRoll;
+    private boolean passed;
 
     public String getName() {
         return name;
